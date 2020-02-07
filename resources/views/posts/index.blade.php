@@ -8,20 +8,23 @@
     <title>Document</title>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('js/script.js') }}">
 </head>
 <body>
-<div class="pos-f-t">
-    <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-            <h5 class="text-white h4">Collapsed content</h5>
-            <span class="text-muted">Toggleable via the navbar brand.</span>
-        </div>
-    </div>
-    <nav class="navbar navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </nav>
+<div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+        <span></span>
+    </label>
+
+    <ul class="menu__box">
+        <li><a class="menu__item" href="#">Главная</a></li>
+        <li><a class="menu__item" href="#">Проекты</a></li>
+        <li><a class="menu__item" href="#">Команда</a></li>
+        <li><a class="menu__item" href="#">Блог</a></li>
+        <li><a class="menu__item" href="#">Контакты</a></li>
+    </ul>
+</div>
 
     <div class="container">
         <div class="row">
@@ -35,6 +38,5 @@
             @endforeach
         </div>
     </div>
-</div>
 </body>
 </html>
