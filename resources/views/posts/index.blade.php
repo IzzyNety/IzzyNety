@@ -8,7 +8,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('js/script.js') }}">
 </head>
 <body>
 <div class="hamburger-menu">
@@ -17,14 +16,22 @@
         <span></span>
     </label>
 
-    <ul class="menu__box">
-        <li><a class="menu__item" href="#">Главная</a></li>
-        <li><a class="menu__item" href="#">Проекты</a></li>
-        <li><a class="menu__item" href="#">Команда</a></li>
-        <li><a class="menu__item" href="#">Блог</a></li>
-        <li><a class="menu__item" href="#">Контакты</a></li>
+
+    <ul class="col-6 menu__box">
+
+        <form class="form-check-label my-0 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Найти пост..." aria-label="Search">
+        </form>
+        <li>
+            <a class="menu__item" href="/">Главная</a>
+        </li>
+        <li>
+            <a class="menu__item" href="/">Создать пост</a>
+        </li>
+
     </ul>
 </div>
+
 
     <div class="container">
         <div class="row">
