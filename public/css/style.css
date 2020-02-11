@@ -2,8 +2,12 @@ body {
     background: #fff;
 }
 
-nav {
-    margin-bottom: 15px;
+.card {
+    margin-bottom: 10px;
+}
+
+.card-author{
+    margin-bottom: 10px;
 }
 
 #menu__toggle {
