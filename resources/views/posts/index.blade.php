@@ -22,10 +22,10 @@
         <form class="form-check-label my-0 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Найти пост..." aria-label="Search">
         </form>
-        <li>
+        <li class="nav-item active">
             <a class="menu__item" href="/">Главная</a>
         </li>
-        <li>
+        <li class="nav-item active">
             <a class="menu__item" href="/">Создать пост</a>
         </li>
 
