@@ -33,10 +33,10 @@
             </a>
         </li>
 
-        <li><a href=""><i class="fa fa-search fa-2x">
-                </i>
-                Поиск
-            </a>
+        <li>
+            <form class="fa fa-search fa-2x" aria-hidden="true" action="{{ route('post.index') }}">
+            <input type="search" name="search" placeholder="Поиск..." class="search" aria-label="Search">
+            </form>
         </li>
         </ul>
 
@@ -86,31 +86,6 @@
         </script>
 
     </div>
-
-
-{{--<div class="hamburger-menu">
-    <input id="menu__toggle" type="checkbox" />
-    <label class="menu__btn" for="menu__toggle">
-        <span></span>
-    </label>
-
-
-    <ul class="col-6 menu__box">
-
-        <form class="form-check-label my-0 my-lg-0" action="{{ route('post.index') }}">
-            <input class="form-control mr-sm-2" name="search" type="search" placeholder="Найти пост..." aria-label="Search">
-        </form>
-        <li class="nav-item active">
-            <a class="menu__item" href="/">Главная</a>
-        </li>
-        <li class="nav-item active">
-            <a class="menu__item" href="/">Создать пост</a>
-        </li>
-
-    </ul>
-</div>--}}
-
-
 
 </body>
 </html>
