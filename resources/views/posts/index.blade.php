@@ -55,7 +55,22 @@
 
                 <div class="row">
                     @foreach($posts as $post)
-                        <div class="col-6">
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="css/img/default.png">
+                        </div>
+                        <div class="contentBox">
+                            <div class="content2">
+                                <h2>{{ $post->short_title }}</h2>
+                                <p> Автор : {{ $post->name }}</p>
+                                <p>{{ $post->descr }}</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                       {{-- <div class="col-6">
                             <div class="card">
                                 <div class="card-header"><h2>{{ $post->short_title }}</h2></div>
                                 <div class="card-body">
@@ -64,7 +79,7 @@
                                     <a href="#" class="btn btn-outline-primary">Посмотреть пост</a>
                                 </div>
                             </div>
-                        </div>
+                        </div>--}}
                     @endforeach
                 </div>
 
