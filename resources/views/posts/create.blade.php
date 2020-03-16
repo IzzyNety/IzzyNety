@@ -33,5 +33,4 @@
                 @if(!isset($_GET['search']))
                     {{ $posts->links() }}
                 @endif
-
 @endsection
