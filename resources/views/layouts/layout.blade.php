@@ -27,7 +27,7 @@
             </a>
         </li>
 
-        <li><a href="/"><i class="fa fa-heart fa-2x">
+        <li><a href="{{ route('post.create') }}"><i class="fa fa-heart fa-2x">
                 </i>
                 Создать пост
             </a>
