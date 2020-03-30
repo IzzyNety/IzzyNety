@@ -22,7 +22,7 @@
                                 <h2>{{ $post->short_title }}</h2>
                                 <p> Автор : {{ $post->name }}</p>
                                 <p>{{ $post->short_descr }}</p>
-                                <a href="#">Читать далее</a>
+                                <a href="{{ route('post.show', ['id' => $post-> post_id]) }}">Читать далее</a>
                             </div>
                         </div>
                     </div>

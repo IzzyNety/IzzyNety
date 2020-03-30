@@ -260,6 +260,10 @@ h1 {
     object-fit: cover;
 }
 
+.card-img_max {
+
+}
+
 .container .card .contentBox {
     position: relative;
     right: 25px;
