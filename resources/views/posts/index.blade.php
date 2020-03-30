@@ -15,13 +15,13 @@
 
                     <div class="card">
                         <div class="imgBox">
-                            <img src="css/img/default.png">
+                            <img src={{ $post->img ?? asset('css/img/default.png')}}>
                         </div>
                         <div class="contentBox">
                             <div class="content2">
                                 <h2>{{ $post->short_title }}</h2>
                                 <p> Автор : {{ $post->name }}</p>
-                                <p>{{ $post->descr }}</p>
+                                <p>{{ $post->short_descr }}</p>
                                 <a href="#">Читать далее</a>
                             </div>
                         </div>

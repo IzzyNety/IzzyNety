@@ -54,6 +54,7 @@ class PostController extends Controller
         $post->title = $request->title;
         $post->short_title = Str::length($request->title)>30 ? Str::substr($request->title, 0, 30) . '...' : $request->title;
         $post->descr = $request->descr;
+        $post->short_descr = Str::length($request->descr)>100 ? Str::substr($request->descr, 0, 100) . '...' : $request->descr;
         $post->author_id = rand(1,4);
 
         if ($request->file('img')) {
