@@ -259,9 +259,12 @@ h1 {
     height: 100%;
     object-fit: cover;
 }
+btn {
+    display: flex;
+}
 
-.card-img_max {
-
+btn a {
+    margin-bottom: 10px;
 }
 
 .container .card .contentBox {
