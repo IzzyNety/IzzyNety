@@ -15,7 +15,7 @@
 
                     <div class="card">
                         <div class="imgBox">
-                            <img src={{ $post->img ?? asset('css/img/default.png')}}>
+                            <img src={{ $post->img ?? asset('img/default.png')}}>
                         </div>
                         <div class="contentBox">
                             <div class="content2">
