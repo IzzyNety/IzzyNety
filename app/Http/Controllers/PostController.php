@@ -89,6 +89,11 @@ class PostController extends Controller
     {
        $post = Post::join('users', 'author_id', '=', 'users.id')
                 ->find($id);
+
+        if (!$post) {
+            return redirect()->route('post.index')->withErrors('Такого поста пока еще нет');
+        }
+
        return view('posts.show', compact('post'));
     }
 
@@ -101,6 +106,10 @@ class PostController extends Controller
     public function edit($id)
     {
         $post = Post::find($id);
+
+        if (!$post) {
+            return redirect()->route('post.index')->withErrors('Такого поста пока еще нет');
+        }
 
         if ($post->author_id != \Auth::user()->id) {
             return redirect()->route('post.index')->withErrors('Вы не можете редактировать данный пост');
@@ -119,6 +128,10 @@ class PostController extends Controller
     public function update(PostRequest $request, $id)
     {
         $post = Post::find($id);
+
+        if (!$post) {
+            return redirect()->route('post.index')->withErrors('Такого поста пока еще нет');
+        }
 
         if ($post->author_id != \Auth::user()->id) {
             return redirect()->route('post.index')->withErrors('Вы не можете редактировать данный пост');
@@ -150,6 +163,10 @@ class PostController extends Controller
     public function destroy($id)
     {
         $post = Post::find($id);
+
+        if (!$post) {
+            return redirect()->route('post.index')->withErrors('Такого поста пока еще нет');
+        }
 
         if ($post->author_id != \Auth::user()->id) {
             return redirect()->route('post.index')->withErrors('Вы не можете удалить данный пост');
